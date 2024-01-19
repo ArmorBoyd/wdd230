@@ -1,4 +1,3 @@
-// Get the current year
 const currentYear = new Date().getFullYear();
 
 // Set the copyright year

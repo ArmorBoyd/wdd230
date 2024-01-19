@@ -1,5 +1,3 @@
-/* Default styles outside the media query apply to all screen sizes */
-
 body {
     font-size: 16px;
 }
@@ -10,7 +8,7 @@ h1 {
 
 nav {
     display: flex;
-    flex-direction: column; /* Display navigation links vertically in a single column */
+    flex-direction: column; 
 }
 
 nav a {
@@ -44,7 +42,7 @@ main {
     }
 
     nav {
-        flex-direction: row; /* Display navigation links horizontally in one row */
+        flex-direction: row; 
     }
 
     nav a {

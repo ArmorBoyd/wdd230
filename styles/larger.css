@@ -1,0 +1,64 @@
+/* Default styles outside the media query apply to all screen sizes */
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Display navigation links vertically in a single column */
+}
+
+nav a {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Media query for larger views */
+@media (min-width: 780px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        flex-direction: row; /* Display navigation links horizontally in one row */
+    }
+
+    nav a {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: calc(48% - 20px);
+    }
+}

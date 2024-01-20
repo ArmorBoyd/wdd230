@@ -1,0 +1,9 @@
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+
+    .card:nth-child(3) {
+        grid-column: span 2; /* Make the third card span two columns */
+    }
+}

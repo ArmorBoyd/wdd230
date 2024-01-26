@@ -1,19 +1,48 @@
-/* Basic styling for demonstration purposes */
+/* CSS for styling */
 body {
-    font-family: Arial, sans-serif; /* Default font */
-    color: #333; /* Default text color */
-    background-color: #f7f7f7; /* Default background color */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333333;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
-header, footer {
-    text-align: center; /* Center align header and footer content */
-    padding: 20px; /* Add padding to header and footer */
+header {
+    background-color: #0400ff;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
 }
-h1, h2, h3 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Heading font */
-    color: #333; /* Heading text color */
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
 }
-p {
-    font-size: 16px; /* Paragraph font size */
-    line-height: 1.5; /* Paragraph line height */
+section {
+    padding: 50px 20px;
+    text-align: center;
 }
-/* Add more specific styles for your color schema and typography */
+section h2 {
+    margin-bottom: 20px;
+}
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+section ul, section ol {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    padding-left: 0;
+}
+section li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #0400ff;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}

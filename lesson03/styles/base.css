@@ -1,0 +1,19 @@
+/* Basic styling for demonstration purposes */
+body {
+    font-family: Arial, sans-serif; /* Default font */
+    color: #333; /* Default text color */
+    background-color: #f7f7f7; /* Default background color */
+}
+header, footer {
+    text-align: center; /* Center align header and footer content */
+    padding: 20px; /* Add padding to header and footer */
+}
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Heading font */
+    color: #333; /* Heading text color */
+}
+p {
+    font-size: 16px; /* Paragraph font size */
+    line-height: 1.5; /* Paragraph line height */
+}
+/* Add more specific styles for your color schema and typography */

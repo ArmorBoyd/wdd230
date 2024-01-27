@@ -1,48 +1,78 @@
-/* CSS for styling */
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #333333;
-    background-color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-}
 header {
     background-color: #0400ff;
     color: #FFFFFF;
-    padding: 20px;
+    padding: 40px 0;
     text-align: center;
 }
-header p {
-    margin-top: 10px;
-    font-size: 18px;
-    line-height: 1.5;
-}
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-section h2 {
-    margin-bottom: 20px;
-}
-section p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-section ul, section ol {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-    padding-left: 0;
-}
-section li {
-    font-size: 16px;
-    line-height: 1.5;
+
+header h1 {
+    font-size: 36px;
     margin-bottom: 10px;
 }
+
+header p {
+    font-size: 18px;
+}
+
+
+section:nth-child(even) {
+    background-color: #e6e6e6; 
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0400ff; 
+}
+
+section p, section ul, section ol {
+    font-size: 18px;
+    color: #333333; 
+}
+
+
 footer {
-    background-color: black;
+    background-color: #333333;
     color: gold;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.wireframe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wireframe-container iframe {
+    flex-basis: 70%; 
+    margin: 10px;
+    max-width: 700px; 
+}
+
+.wireframe-container iframe:nth-child(2) {
+    flex-basis: 30%; 
 }

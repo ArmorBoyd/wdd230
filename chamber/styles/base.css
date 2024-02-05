@@ -218,3 +218,26 @@ nav a {
 }
 
 }
+
+/* Media query for smaller views */
+@media (max-width: 780px) {
+  main img {
+      max-width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Media query for smaller views */
+@media (max-width: 780px) {
+  .card-container,
+  .spotlight-container {
+      flex-direction: column; /* Stack containers vertically */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .card,
+  .spotlight {
+      width: 100%; /* Take full width of the container */
+      margin: 10px 0; /* Adjust margin for spacing */
+  }
+}

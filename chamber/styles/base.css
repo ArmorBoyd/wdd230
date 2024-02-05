@@ -187,7 +187,7 @@ color: #333;
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-display: block;
+  display: block;
 }
 
 

@@ -8,19 +8,19 @@ header {
 header h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 header p {
     font-size: 18px;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 section h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #0400ff;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 section p,

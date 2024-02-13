@@ -219,6 +219,16 @@ nav a {
 
 }
 
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+
 /* Media query for smaller views */
 @media (max-width: 780px) {
   main img {
@@ -241,3 +251,5 @@ nav a {
       margin: 10px 0; 
   }
 }
+
+

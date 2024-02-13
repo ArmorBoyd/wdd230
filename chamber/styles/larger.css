@@ -32,7 +32,6 @@ main {
 }
 
 
-
 /* Media query for larger views */
 @media (min-width: 780px) {
   body {

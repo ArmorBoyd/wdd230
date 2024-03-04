@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Example</title>
+    <meta name="author" content="Boyd Poblete">
+    <link rel="stylesheet" href="styles/lazy.css">
+
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Images</h1>
+    </header>
+
+    <main>
+        <picture>
+            <img  src="https://loremflickr.com/320/240" alt="Placeholder" loading="Lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img  src="http://placekitten.com/g/200/300" alt="Kitten" loading="Lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img  src="https://placebear.com/200/300" alt="Bear" loading="Lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img  src="https://picsum.photos/id/5/5000/3334" alt="Placeholder" loading="Lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img  src="https://picsum.photos/200/300?grayscale" alt="Padlock" loading="Lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img  src="https://loremflickr.com/g/320/240/paris,girl/all" alt="BestFriends" loading="Lazy" width="400" height="600">
+        </picture>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> Boyd | Philippines</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+      <script src="scripts/lazy.js"></script>
+
+</body>
+</html>

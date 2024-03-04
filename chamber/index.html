@@ -35,11 +35,14 @@
     </header>
 
     <main>
-        <picture>
-            <source media="(max-width: 350px)" srcset="images/hero-small.webp">
-            <source media="(max-width: 550px)" srcset="images/hero-medium.webp">
-            <img src="images/hero.webp" alt="Hero Image" width="750" height="400">
-        </picture>
+        <!-- WEEK ^ ONLY 
+            <div class="hero-img">
+            <picture>
+                <source srcset="images/hero.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero.webp" alt="Large Hero Image" width="1500" height="750">
+            </picture> -->
+        <img src="images/ecommerce.webp" alt="Hero image">
         <div class="card-container">
             <section class="card">
                 <h3>Current Events</h3>
@@ -47,17 +50,15 @@
                     Banchetto. </p>
             </section>
             <section class="card">
-                <h3>Weather</h3>
-                <div class="temperature">
-                    <p><span id="tempDegrees">25.70</span>°C</p>
-                    <p id="tempName">Clouds</p>
-                </div>
+                <h3>Weather Update</h3>
+                    <div class="temperature">
+                        <p><span id="temp">Temperature: 30</span>°C</p>
+                    </div>
     
-                <div class="windchill">
-                    <p id="windSpeed">Gentle Breeze: 3.01 km/h</p>
-                    <p id="feelsLike">Feels Like: 24.18°C</p>
-                </div>
-            </div>
+                    <div class="chill">
+                        <p id="speed">Breeze: 10. km/h</p>
+                        <p id="chill">Wind Chill: N/A</p>
+                    </div>
             </section>
         </div>
 
@@ -85,6 +86,7 @@
 
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburg.js" defer></script>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/darkmode.js"></script>
 </body>
 

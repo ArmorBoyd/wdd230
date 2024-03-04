@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W06 Responsive Images</title>
+    <title>Boyd Poblete | WDD 230 Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 Web Frontend Development | Responsive Images">
+    <meta name="author" content="Boyd Armor Poblete">
+    <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
+
 <body>
-    
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/temple-small.webp" media="(max-width: 500px)">
+                <source srcset="images/temple-medium.webp" media="(max-width: 1000px)">
+                <img src="images/temple-large.webp" alt="Large Hero Image" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
 </body>
+
 </html>

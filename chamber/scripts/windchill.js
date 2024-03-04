@@ -1,21 +1,24 @@
-const speed = document.querySelector('#windSpeed');
-const temp = document.querySelector('#tempDegrees');
-const tempName = document.querySelector('#tempName');
-const feel = document.querySelector('#feelsLike');
-const apiUrl = https://api.openweathermap.org/data/2.5/weather?q=Cauayan&units=metric&appid=9f09a5eccc0510d7c21cbba3d3d1c791;
+document.addEventListener("DOMContentLoaded", function () {
+    const tempElement = document.getElementById("temp");
+    const speedElement = document.getElementById("speed");
+    const chillElement = document.getElementById("chill");
 
+    if (tempElement && speedElement && chillElement) {
+        const temp = parseFloat(tempElement.textContent);
+        const speed = parseFloat(speedElement.textContent);
 
-fetch(apiUrl)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
-        const iconsrc = https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png;
-        const desc = jsObject.weather[0].description;
-        document.querySelector('#weatherIcon').setAttribute('src', iconsrc);
-        document.querySelector('#weatherIcon').setAttribute('alt', desc);
-
-        feel.innerHTML = Feels Like : ${jsObject.main.feels_like}&deg;C;
-        temp.textContent = ${jsObject.main.temp};
-        speed.textContent = Wind Speed : ${jsObject.wind.speed};
-        tempName.textContent = desc;
+        if (!isNaN(temp) && !isNaN(speed)) {
+            if (temp <= 50 && speed > 3.0) {
+                const chill = calculateWindChill(temp, speed);
+                chillElement.textContent = `Wind Chill: ${chill}°F`;
+            } else {
+                chillElement.textContent = "Wind Chill: N/A";
+            }
+        }
+    }
 });
+
+function calculatechill(temperature, speed) {
+    const chill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temperature * Math.pow(speed, 0.16);
+    return Math.round(chill);
+}

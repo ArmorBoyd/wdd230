@@ -35,7 +35,11 @@
     </header>
 
     <main>
-        <img src="images/ecommerce.jpeg" alt="Hero Image" >
+        <picture>
+            <source media="(max-width: 350px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 550px)" srcset="images/hero-medium.webp">
+            <img src="images/hero.webp" alt="Hero Image" width="750" height="400">
+        </picture>
         <div class="card-container">
             <section class="card">
                 <h3>Current Events</h3>
@@ -44,7 +48,16 @@
             </section>
             <section class="card">
                 <h3>Weather</h3>
-                <p>Ang buhay ay weather weather lang</p>
+                <div class="temperature">
+                    <p><span id="tempDegrees">25.70</span>°C</p>
+                    <p id="tempName">Clouds</p>
+                </div>
+    
+                <div class="windchill">
+                    <p id="windSpeed">Gentle Breeze: 3.01 km/h</p>
+                    <p id="feelsLike">Feels Like: 24.18°C</p>
+                </div>
+            </div>
             </section>
         </div>
 

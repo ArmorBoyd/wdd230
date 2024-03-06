@@ -32,11 +32,11 @@ todayDisplay.textContent = currentDate.toLocaleDateString('en-US', options);
 // Display message based on the difference in days
 if (isNaN(daysDiff) || daysDiff <= 0) {
     // First visit or same day visit
-    visitsDisplay.textContent = "Welcome! Let us know if you have any questions.";
+    sidebarContent.textContent = "Welcome! Let us know if you have any questions.";
 } else if (daysDiff === 1) {
     // Visit within 1 day
-    visitsDisplay.textContent = "Back so soon! Awesome!";
+    sidebarContent.textContent = "Back so soon! Awesome!";
 } else {
     // Visit more than 1 day ago
-    visitsDisplay.textContent = `You last visited ${daysDiff} ${daysDiff === 1 ? 'day' : 'days'} ago.`;
+    sidebarContent.textContent = `You last visited ${daysDiff} ${daysDiff === 1 ? 'day' : 'days'} ago.`;
 }

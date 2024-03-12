@@ -254,3 +254,87 @@ nav a:hover {
 	}
 
 }
+
+/*-----------FORM STYLING-------------*/
+
+form {
+	margin: 1rem;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 1rem;
+	background-color: #eee;
+	width: 500px;
+}
+.app fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    width: 96%;
+}
+
+.app legend {
+    color: black;
+    padding: 0 .5rem;
+}
+
+.app label {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+}
+
+.app input[type="text"],
+.app input[type="password"],
+.app input[type="email"],
+.app select {
+    background-color: white;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.app input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c9c9c, #6f6f6f);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.app input:required {
+    border-bottom: solid 8px red;
+}
+
+.app input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+#rating {
+	width: 220px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}

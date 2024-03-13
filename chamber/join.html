@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauayan Chamber of Commerce</title>
+    <meta name="description" content="Cauayan Chamber of Commerce is for the development
+    of businesses and commerce in Cauayan City.">
+    <meta name="author" content="Boyd Poblete">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Cauayan Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pcci.itbs.com.ph/members/image/logo/pcciblue.png">
+    <meta property="og:url" content="https://armorboyd.github.io/wdd230/chamber">
+</head>
+
+<body>
+    <header>
+        <img src="images/chamberlogo.webp" alt="Logo" width="200">
+        <h1>Cauayan Chamber of Commerce</h1>
+        <button id="hamburger"></button>
+        <nav>
+            <a href="https://armorboyd.github.io/wdd230/">Home</a>
+            <a href="discover.html" target="_blank">Discover</a>
+            <a href="chamber/" target="_blank">Chamber</a>
+            <a href="#" class="cta-button" target="_blank">Join Now</a>
+        </nav>
+        <div id="mode">
+            🕶️
+        </div>
+    </header>
+
+    <main>
+        <h1>Membership Application Form</h1>
+        <form method="get" action="thankyou.html" class="app">
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <label for="firstName">First Name* <input type="text" id="firstName" name="fname" required></label>
+                <label for="lastName">Last Name* <input type="text" id="lastName" name="lname" required></label>
+                <label for="title">Title/Position* <input type="text" id="title" name="title" required
+                        pattern="[a-zA-Z\s\-]{7,}"
+                        title="Must contain at least 7 characters, spaces, or hyphen"></label>
+                <label for="email">Email* <input type="email" id="email" name="email" required
+                        placeholder="example@gmail.com"></label>
+                <label for="phone">Phone Number* <input type="tel" id="phone" name="phone" required
+                        placeholder="09xxxxxxxxx"></label>
+                <label for="organization">Organization Name* <input type="text" id="organization" name="organization"
+                        required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Membership Level</b></legend>
+                <label><input type="radio" name="membership" value="Non-Profit"> Non-profit</label>
+                <label><input type="radio" name="membership" value="Bronze"> Bronze</label>
+                <label><input type="radio" name="membership" value="Silver"> Silver</label>
+                <label><input type="radio" name="membership" value="Gold"> Gold</label>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Organization Description</b></legend>
+                <label for="description"><textarea id="description" name="description" rows="3" cols="50"
+                        placeholder="Describe your organization"></textarea></label>
+            </fieldset>
+
+            <input type="hidden" name="formLoadDateTime" id="formLoadDateTime">
+            <input type="submit" value="Join the Chamber">
+
+            <fieldset class="membershipBenefits">
+                <legend><b>Membership Level Benefits</b></legend>
+                <div class="membership">
+                    <h3>Non-Profit Org</h3>
+                    <ul>
+                        <li>
+                            Educational resources: Gain access to workshops, seminars, and resources tailored to the
+                            needs of non-profit organizations, helping you to enhance your operational efficiency and
+                            effectiveness.
+                        </li>
+                    </ul>
+                </div>
+                <div class="bronze">
+                    <h3>Bronze Membership</h3>
+                    <ul>
+                        <li>Basic networking opportunities: Connect with other Chamber members at networking events,
+                            mixers, and business expos to expand your professional network.</li>
+                        <li>Member discounts: Access exclusive discounts on Chamber programs, services, and events,
+                            helping you save on essential business expenses.</li>
+                    </ul>
+                </div>
+                <div class="silver">
+                    <h3>Silver Membership</h3>
+                    <ul>
+                        <li>
+                            Access to Chamber resources: Tap into a wealth of business resources, including market
+                            research
+                            reports, business planning tools, and best practice guides to support your growth and
+                            success.
+                        </li>
+                        <li>Networking benefits: Participate in exclusive networking events, roundtable
+                            discussions, and industry-specific forums to connect with key influencers and
+                            decision-makers.
+                        </li>
+                        <li>Marketing opportunities: Showcase your products, services, and achievements through
+                            sponsored content, social media features, and spotlight articles in Chamber communications.
+                        </li>
+                    </ul>
+                </div>
+                <div class="gold">
+                    <h3>Gold Membership</h3>
+                    <ul>
+                        <li>VIP networking access: Gain access to exclusive VIP networking receptions, executive
+                            luncheons, and leadership events, providing unparalleled opportunities to connect with
+                            industry leaders and decision-makers.</li>
+                        <li>Premier listing in Chamber directory: Enjoy top-tier placement in the Chamber's directory,
+                            with enhanced visibility and promotion across Chamber communication channels.</li>
+                        <li>Customized marketing support: Receive personalized marketing assistance from the Chamber's
+                            marketing team, including tailored promotional campaigns, media outreach, and branding
+                            support.</li>
+                        <li>Strategic partnership opportunities: Collaborate with the Chamber on strategic initiatives,
+                            sponsorships, and community projects to demonstrate your commitment to corporate social
+                            responsibility and community development.</li>
+                        </ul>
+                </div>
+            </fieldset>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> | Boyd Poblete | bp69@gmail.com | WDD230 Chamber Project</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburg.js" defer></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+
+</html>

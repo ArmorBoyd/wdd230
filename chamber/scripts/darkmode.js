@@ -16,82 +16,38 @@ modeButton.addEventListener("click", () => {
 
 //Weather Section
 
-// week10 current weather
-const currentWeatherDiv = document.getElementById("current-weather");
-const weatherCardsDiv = document.getElementById("weather-cards");
-const API_KEY = "9f09a5eccc0510d7c21cbba3d3d1c791";
+//FETCH Weather API
+// Select HTML elements in the document
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-const createWeatherCard = (weatherItem) => {
-    return `<li class="card">
-                <h3>${weatherItem.date}</h3>
-                <div class="details">
-                    <p>${weatherItem.temp}°C - ${weatherItem.description}</p>
-                    <img src="http://openweathermap.org/img/wn/${weatherItem.icon}.png" alt="Weather Icon">
-                </div>
-            </li>`;
-};
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=16.9166&lon=121.7879&units=metric&appid=60f21ce893739f0dee13f1ab33152b6d'; 
 
-const updateWeatherData = () => {
-    // Get current weather
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Cebu&appid=${API_KEY}`)
-        .then((response) => response.json())
-        .then((data) => {
-            const currentWeather = {
-                temperature: (data.main.temp - 273.15).toFixed(2),
-                description: data.weather[0].description,
-                icon: data.weather[0].icon
-            };
-            currentWeatherDiv.innerHTML = `
-                <h4>Current Weather</h4>
-                <div class="details">
-                    <p>${currentWeather.temperature}°C - ${currentWeather.description}</p>
-                    <img src="http://openweathermap.org/img/wn/${currentWeather.icon}.png" alt="Weather Icon" tyle="width: 20px; height: 30px;">
-                </div>`;
-        })
-        .catch((error) => console.error("Error fetching current weather:", error));
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data); // Testing only
+            displayResults(data); // Uncomment when ready
+        } else {
+            throw new Error('Failed to fetch data');
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
 
-    // Get three-day forecast
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Cebu&appid=${API_KEY}`)
-        .then((response) => response.json())
-        .then((data) => {
-            const forecast = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
-            weatherCardsDiv.innerHTML = forecast.map((item) => {
-                const weatherItem = {
-                    date: item.dt_txt.split(" ")[0],
-                    temp: (item.main.temp - 273.15).toFixed(2),
-                    description: item.weather[0].description,
-                    icon: item.weather[0].icon
-                };
-                return createWeatherCard(weatherItem);
-            }).join("");
-        })
-        .catch((error) => console.error("Error fetching weather forecast:", error));
-};
+apiFetch();
 
-updateWeatherData();
+function displayResults(data) {
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;
 
-const banner = document.getElementById("meetAndGreetBanner");
-const closeButton = document.getElementById("closeBannerButton");
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const desc = data.weather[0].description;
 
-// check if today is Monday, Tuesday, or Wednesday
-const isBannerDay = () => {
-    const today = new Date();
-    const dayOfWeek = today.getDay();
-    return dayOfWeek >= 1 && dayOfWeek <= 3;
-};
-
-// toggle the banner visibility
-const toggleBanner = () => {
-    banner.style.display = isBannerDay() ? "block" : "none";
-};
-
-// Close button event listener
-closeButton.addEventListener("click", () => {
-    banner.style.display = "none";
-});
-
-// Check and display the banner on page load
-window.addEventListener("load", toggleBanner);
-
-});
-
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
+}

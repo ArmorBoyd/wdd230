@@ -15,7 +15,7 @@ document.getElementById('lastModified').textContent = 'Last Modified: ' + lastMo
 
 
 
-//FETCH Weathe API
+//FETCH Weather API
 // Select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');

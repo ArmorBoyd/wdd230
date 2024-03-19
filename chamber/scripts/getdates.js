@@ -10,7 +10,7 @@ const lastModifiedDate = document.lastModified;
 // Set the last modified date in the second paragraph of the footer
 document.getElementById('lastModified').textContent = 'Last Modified: ' + lastModifiedDate;
 
-//Directory
+//Directory of Members
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");

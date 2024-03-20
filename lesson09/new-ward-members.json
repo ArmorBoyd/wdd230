@@ -1,0 +1,40 @@
+{
+    "wardInformation": {
+    "familyName": "Poblete",
+    "moveInDate": "2024-03-15",
+    "numberOfPeople": 6,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Jaime Poblete",
+        "gender": "Male",
+        "birthdate": "1900-12-13"
+      },
+      {
+        "name": "Marilyn Poblete",
+        "gender": "Female",
+        "birthdate": "1900-12-14"
+      },
+      {
+        "name": "jaine Poblete",
+        "gender": "Female",
+        "birthdate": "1920-12-28"
+      },
+      {
+        "name": "Wynnett Poblete",
+        "gender": "Female",
+        "birthdate": "1930-12-06"
+      },
+      {
+        "name": "Boyd Poblete",
+        "gender": "Male",
+        "birthdate": "1925-12-28"
+      },
+      {
+        "name": "Jim Poblete",
+        "gender": "Male",
+        "birthdate": "1935-12-10"
+      }
+    ]
+    }
+  }

@@ -2,44 +2,29 @@ const baseURL = "https://armorboyd.github.io/wdd230/";
 const linksURL = "https://armorboyd.github.io/wdd230/data/links.json";
 
 async function getLinks() {
+  try {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data);
+    displayLinks(data.lessons);
+  } catch (error) {
+    console.error('Error fetching or parsing links data:', error);
+  }
 }
 
 function displayLinks(weeks) {
-    const cardContainer = document.querySelector('.card-container');
+  const linksContainer = document.getElementById('LearningActivities');
 
-    // Clear existing content
-    cardContainer.innerHTML = '';
-
-    // Loop through each week
-    weeks.forEach(weekData => {
-        // Create a section for each week
-        const section = document.createElement('section');
-        section.classList.add('card');
-
-        // Add week title
-        const weekTitle = document.createElement('h3');
-        weekTitle.textContent = "Week " + weekData.lesson;
-        section.appendChild(weekTitle);
-
-        // Create links for the week
-        const linksList = document.createElement('ol');
-        weekData.links.forEach(link => {
-            const listItem = document.createElement('li');
-            const linkElement = document.createElement('a');
-            linkElement.href = baseURL + link.url;
-            linkElement.textContent = link.title;
-            listItem.appendChild(linkElement);
-            linksList.appendChild(listItem);
-        });
-        section.appendChild(linksList);
-
-        // Append the section to the card container
-        cardContainer.appendChild(section);
-    });
+  weeks.forEach(week => {
+    if (week.lesson && week.links) {
+      week.links.forEach(link => {
+        const listItem = document.createElement('li');
+        const lessonLink = document.createElement('a');
+        lessonLink.href = baseURL + link.url;
+        lessonLink.target = "_blank";
+        lessonLink.textContent = link.title;
+        listItem.appendChild(lessonLink);
+        linksContainer.appendChild(listItem);
+      });
+    }
+  });
 }
-
-// Call the function to fetch and display links
-getLinks();

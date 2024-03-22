@@ -1,0 +1,73 @@
+{"members": [
+    {
+      "name": "BDO",
+      "address1": "Primark Town Center, Maharlika Highway corner Cortes St.",
+      "address2": "Cauayan City, Isabela, Philippines",
+      "phone": "0969 669 9669",
+      "website": "https://www.bdo.com.ph/personal",
+      "image": "images/bdo.webp",
+      "membershipLevel": "Gold",
+      "intro": "Banco De Oro a.k.a. BDO is one of the largest and most trusted banking Company in the Philippines "
+    },
+    {
+      "name": "Everise",
+      "address1": "WQP8+55H, Gov. F.N. Dy Blvd",
+      "address2": "Cauayan City, Isabela, Philippines",
+      "phone": "0969 669 9669",
+      "website": "https://weareeverise.com/",
+      "image": "images/everise.webp",
+      "membershipLevel": "Silver",
+      "intro": "Everise is a global leader in transforming customer service for healthcare, transport, logistics, insurance, financial services and tech businesses."
+    },
+    {
+      "name": "San Miguel Corp",
+      "address1": "2301 Kulelat St",
+      "address2": "Cauayan City, Isabela, Philippines",
+      "phone": "0969 669 9669",
+      "website": "https://www.sanmiguel.com.ph/",
+      "image": "images/sanmiguel.png",
+      "membershipLevel": "Gold",
+      "intro": "San Miguel Corporation (SMC) is one of the Philippines' largest and most diversified conglomerates."
+    },
+    {
+      "name": "SM City Cauayan",
+      "address1": "Maharlika Highway, Brgy. District II",
+      "address2": "Cauayan City, Isabela, Philippines",
+      "phone": "0969 669 9669",
+      "website": "https://www.smsupermalls.com/",
+      "image": "images/smcauayan.webp",
+      "membershipLevel": "Gold",
+      "intro": "Explore a world of shopping, dining, and entertainment at SM Supermalls!"
+    },
+    {
+      "name": "Speed Ace Advertising",
+      "address1": "A&J Building, Roxas St.",
+      "address2": "Cauayan City, Isabela, Philippines",
+      "phone": "0969 669 9669",
+      "website": "https://www.facebook.com/p/Speed-Ace-Advertising-100071868947258/?paipv=0&eav=AfaCM5DKPR6s7jHUQ72c8uV88TH4-AFabtgj4UZh0NKEo-6CIWKjEwfL6wf_CrVDmRc&_rdr",
+      "image": "images/speed.webp",
+      "membershipLevel": "Gold",
+      "intro": "We print while you wait"
+    },
+    {
+      "name": "Camella Homes",
+      "address1": "VP8M+8GR, National Highway",
+      "address2": "Cauayan City, Isabela, Philippines",
+      "phone": "0969 669 9669",
+      "website": "https://www.camella.com.ph/",
+      "image": "images/camella.webp",
+      "membershipLevel": "Silver",
+      "intro": "Experience spacious living with Camella’s exquisite portfolio of homes and condominiums developments."
+    },
+    {
+      "name": "Isabela Convention Center",
+      "address1": "Barangay San Fermin",
+      "address2": "Cauayan City, Isabela, Philippines",
+      "phone": "09269394744",
+      "website": "https://icon.cityofcauayan.gov.ph/",
+      "image": "images/icon.webp",
+      "membershipLevel": "bronze",
+      "intro": "The Isabela Convention Center, or ICON, is the new state-of-the-art facility located in the heart of Region 2"
+    }
+  ]  
+}

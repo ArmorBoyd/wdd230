@@ -25,7 +25,7 @@ apiFetch();
 function displayResults(data) {
     currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;
 
-    const iconsrc = `https://openweathermap.org/img/wn/10d@2x.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const desc = data.weather[0].description;
 
     weatherIcon.setAttribute('src', iconsrc);

@@ -12,7 +12,7 @@ async function getLinks() {
 }
 
 function displayLinks(weeks) {
-  const linksContainer = document.getElementById('LearningActivities');
+  const linksContainer = document.getElementById('card-container');
 
   weeks.forEach(week => {
     if (week.lesson && week.links) {

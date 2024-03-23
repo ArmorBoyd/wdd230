@@ -54,7 +54,7 @@ function displayResults(data) {
 
 
    const weatherCardsDiv = document.getElementById("weather-cards");
-const API_KEY = "YOUR_API_KEY"; // Replace "YOUR_API_KEY" with your actual API key
+const API_KEY = "60f21ce893739f0dee13f1ab33152b6d"; 
 
 const createWeatherCard = (weatherItem) => {
     return `<li class="card">
@@ -68,16 +68,17 @@ const createWeatherCard = (weatherItem) => {
 
 const updateWeatherData = () => {
     // Get three-day forecast
-    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=16.9166&lon=121.7879&units=metric&exclude=current,minutely,hourly&appid=${API_KEY}`)
+// Get three-day forecast
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Cebu&appid=${API_KEY}`)
         .then((response) => response.json())
         .then((data) => {
-            const forecast = data.daily.slice(1, 4); // Extracting next three days forecast
-            weatherCardsDiv.innerHTML = forecast.map((day) => {
+            const forecast = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
+            weatherCardsDiv.innerHTML = forecast.map((item) => {
                 const weatherItem = {
-                    date: new Date(day.dt * 1000).toLocaleDateString('en-US', { weekday: 'long' }), // Convert timestamp to weekday
-                    temp: day.temp.day.toFixed(2),
-                    description: day.weather[0].description,
-                    icon: day.weather[0].icon
+                    date: item.dt_txt.split(" ")[0],
+                    temp: (item.main.temp - 273.15).toFixed(2),
+                    description: item.weather[0].description,
+                    icon: item.weather[0].icon
                 };
                 return createWeatherCard(weatherItem);
             }).join("");

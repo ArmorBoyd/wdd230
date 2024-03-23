@@ -69,7 +69,7 @@ const createWeatherCard = (weatherItem) => {
 const updateWeatherData = () => {
     // Get three-day forecast
 // Get three-day forecast
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Cebu&appid=${API_KEY}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=16.9166&lon=121.7879&units=metric&appid=${API_KEY}`)
         .then((response) => response.json())
         .then((data) => {
             const forecast = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);

@@ -243,3 +243,80 @@ iframe{
         width: 100%;
     }
 }
+
+/*---Reserve Form---*/
+.reserve{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reserveform{
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.reserveform h1{
+    text-align: center;
+}
+
+.app fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    width: 95%;
+  }
+  
+  .app legend {
+    color: blue;
+    padding: 0 .5rem;
+  }
+  
+  .app label {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+  }
+  
+  .app input[type="text"],
+  .app input[type="password"],
+  .app input[type="email"],
+  .app input[type="tel"],
+  .app select {
+    background-color: white;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+  }
+  
+  .app input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(blue, darkblue);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+  }
+  
+  .app input:required {
+    border: solid 2px red;
+  }
+  
+  .app input:required:valid {
+    border: solid 2px green;
+  }

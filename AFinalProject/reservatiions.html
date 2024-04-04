@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Motor Scooter Rental Company</title>
+    <meta name="description" content="Scoots is a motor scooter rental company located 
+    on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. 
+    This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, 
+    and cruise-based touring groups and partnerships.">
+    <meta name="author" content="Boyd Poblete">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/scoots.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Scoots Motor Scooter Rental Company">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://digital.ihg.com/is/image/ihg/intercontinental-cozumel-8919745927-2x1?wid=1100">
+    <meta property="og:url" content="https://armorboyd.github.io/wdd230/chamber">
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <h1>Scoots</h1>
+                <a href="scoots.html"><img src="images/logo.webp" alt="Logo" width="87" ></a>
+            </div>
+            <ul class="nav">
+                <a href="scoots.html"><li>Home</li></a>
+                <a><li>Book Now</li></a>
+                <a><li>Rentals</li></a>
+                <a href="contactus.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="reserve">
+        <div class="reserveform">
+        <h1>Reservation Form</h1>
+        <form method="get" action="thankyou.html" class="app">
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <label for="firstName">Full Name* <input type="text" id="firstName" name="fname" required></label>
+                
+                <label for="email">Email* <input type="email" id="email" name="email" required
+                        placeholder="example@gmail.com"></label>
+                <label for="phone">Phone Number* <input type="tel" id="phone" name="phone" required
+                        placeholder="09xxxxxxxxx"></label>
+                <label for="state">Home/State <input type="text" id="state" name="state"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Rental Type</b></legend>
+                <label><input type="radio" name="rental" value="Honda Metro Scooter"> Honda Metro Scooter</label>
+                <label><input type="radio" name="rental" value="Honda Dio Scooter"> Honda Dio Scooter</label>
+                <label><input type="radio" name="rental" value="Honda PCX150 Scooter"> Honda PCX150 Scooter</label>
+                <label><input type="radio" name="rental" value="Honda Pioneer ATV"> Honda Pioneer ATV</label>
+                <label><input type="radio" name="rental" value="Jeep Wrangler - 4 door a/c"> Jeep Wrangler - 4 door a/c</label>
+                <label><input type="radio" name="rental" value="Jeep Wrangler - 2 door"> Jeep Wrangler - 2 door</label>
+                <label for="start-date">Start Date*</label>
+                <input type="date" name="start-date" id="start-date" required>
+                <label for="return-date">Return Date*</label>
+                <input type="date" name="return-date" id="return-date" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend><b>Special Accomodations/Requests</b></legend>
+                <label for="description"><textarea id="description" name="description" rows="3" cols="50"
+                        placeholder="Comments, Drop-off Requests, etc."></textarea></label>
+            </fieldset>
+
+            <input type="hidden" name="formLoadDateTime" id="formLoadDateTime">
+            <input type="submit" value="Book my Reservation">
+        </div>
+            
+        </form>
+        </div>
+    </main>
+
+    <footer class="footspa">
+        <div class="inner_footer">
+            <div class="socials">
+            <a href="https://www.facebook.com/"><ion-icon name="logo-facebook" ></ion-icon></a>
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram" ></ion-icon></a>
+            <a href="https://twitter.com/"><ion-icon name="logo-twitter" ></ion-icon></a>
+            <a href="https://www.google.com/"><ion-icon name="logo-google" ></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <script src="scripts/hamburg.js" defer></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+
+</html>

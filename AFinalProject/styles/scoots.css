@@ -373,3 +373,44 @@ iframe{
     width: 45%;
 }
 
+/*---Rentals---*/
+
+.rentals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    gap: 20px;
+  }
+  
+  .rental-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .rental-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .rental-item h3 {
+    margin-top: 0;
+  }
+  
+  .rental-item table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .rental-item th,
+  .rental-item td {
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+
+  .rental-item img {
+    width: 300px;
+    height: 300px; 
+    object-fit: cover; 
+  }

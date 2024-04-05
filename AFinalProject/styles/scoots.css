@@ -274,7 +274,7 @@ iframe{
   }
   
   .app legend {
-    color: blue;
+    color: black;
     padding: 0 .5rem;
   }
   
@@ -320,3 +320,56 @@ iframe{
   .app input:required:valid {
     border: solid 2px green;
   }
+
+  .rental-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1, .container h2 {
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.signature {
+    margin-top: 40px;
+}
+
+.signature label {
+    font-weight: bold;
+}
+
+.signature input[type="text"], 
+.signature input[type="date"],
+.signature textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signature::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.signature .left {
+    float: left;
+    width: 45%;
+}
+
+.signature .right {
+    float: right;
+    width: 45%;
+}
+

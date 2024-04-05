@@ -46,6 +46,33 @@
         <div class="reserveform">
         <h1>Reservation Form</h1>
         <form method="get" action="thankyou.html" class="app">
+
+<div class="rentals">
+<div class="rental-container">
+    <h1>Motorcycle Rental Agreement</h1>
+
+    <div class="section">
+        <h2>Rental Period</h2>
+        <p>-The rental period starts at pickup and ends upon return.</p>
+    </div>
+
+    <div class="section">
+        <h2>Requirements</h2>
+        <ol>
+        <li><p>-Renter must be 21+ with a valid motorcycle license and provide ID and credit card.</p></li>
+        <li><p>-A partial payment of 50% is required upon reservation and full payment upon pickup</p></li>
+        </ol>
+    </div>
+
+    <div class="signature">
+        <div class="left">
+            <label for="renterName">Renter's signature:</label>
+            <input type="text" id="renterName" name="renterName" placeholder="Enter Full Name" required>
+        </div>
+
+    </div>
+</div>
+</div>
             <fieldset>
                 <legend><b>Personal Information</b></legend>
                 <label for="firstName">Full Name* <input type="text" id="firstName" name="fname" required></label>
@@ -75,13 +102,14 @@
                 <legend><b>Special Accomodations/Requests</b></legend>
                 <label for="description"><textarea id="description" name="description" rows="3" cols="50"
                         placeholder="Comments, Drop-off Requests, etc."></textarea></label>
+                        <label for="agree"><input type="checkbox" name="agree" id="agree" required> I agree to the terms and conditions</label>
+                       
             </fieldset>
-
-            <input type="hidden" name="formLoadDateTime" id="formLoadDateTime">
+            
             <input type="submit" value="Book my Reservation">
+        </form>
         </div>
             
-        </form>
         </div>
     </main>
 

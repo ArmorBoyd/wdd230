@@ -1,6 +1,6 @@
 const rentalsSection = document.querySelector('.rentals');
 
-fetch('data/scoots.json') // replace with your actual path if needed
+fetch('data/scoots.json') 
   .then(response => response.json())
   .then(data => {
     data.forEach(rental => {

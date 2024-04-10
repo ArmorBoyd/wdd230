@@ -94,7 +94,7 @@
 .scoots-content p{
     max-width: 380px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 24px;
     color: white;
 }
 
@@ -104,6 +104,21 @@
     font-size: 24px;
     color: white;
 }
+
+.scoots-content button {
+    background-color: #ff7200; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer; 
+  }
+  .scoots-content span{
+    color: white;
+    font-size: 34px;
+    background-color: #ff7200;
+  }
 /*---Footer---*/
 
 .footspa{

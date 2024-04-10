@@ -1,3 +1,4 @@
+/*---Rentals---*/
 const rentalsSection = document.querySelector('.rentals');
 
 fetch('data/scoots.json') 

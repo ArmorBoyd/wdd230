@@ -30,12 +30,14 @@
                 <h1>Scoots</h1>
                 <a href="scoots.html"><img src="images/logo.webp" alt="Logo" width="87" ></a>
             </div>
+            <button id="hamburger" aria-label="Menu"></button>
             <ul class="nav">
                 <a href="index.html"><li>Home</li></a>
                 <a href="reservations.html"><li>Book Now</li></a>
                 <a href="rental.html"><li>Rentals</li></a>
                 <a href="contactus.html"><li>Contact</li></a>
             </ul>
+            
         </div>
     </header>
       
@@ -48,8 +50,30 @@
                 <p><span>**Limited availability!**</span> Book your scooter today to secure yours for your Cozumel adventure.</p>
                 <a href="reservations.html"><button>Book Now</button></a>
               </div>
-              
         </div>
+
+        <section id="current-weather-section" class="current-weather-section">
+            <div class="weather-container">
+                <div class="weather-card">
+                    <h2>Weather Update</h2>
+                    <div class="current-weather" id="current-weather">
+                        <h4>Current Weather</h4>
+                        <p>The current temperature in Cozumel is <span id="current-temp"></span></p>
+            <figure>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <figcaption></figcaption>
+            </figure>
+                    </div>
+                    <div class="days-forecast" id="days-forecast">
+                        <h4>3-Day Weather Forecast at 3pm in the afternoon</h4>
+                        <div class="weather-cards" id="weather-cards"></div>
+
+                        <div class="banner-container">
+                            <div id="Banner" class="banner" style="display: none;">
+                                <p>Max temperature for today <span id="temp_max"></span></p>
+                                <button id="closeBanner" class="close-button">❌</button>
+                            </div>
+                        </div>
     </main>
 
     <footer class="footspa">
@@ -63,10 +87,8 @@
         </div>
     </footer>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/hamburg.js" defer></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/darkmode.js"></script>
-</body>
+    <script src="scripts/scoots.js"></script>
 
+
+</body>. 
 </html>

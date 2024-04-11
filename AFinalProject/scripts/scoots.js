@@ -129,6 +129,15 @@ const updateWeatherData = () => {
 
 updateWeatherData();
 
-document.querySelector('.closeBanner').addEventListener('click', function() {
-  document.querySelector('.banner-container').style.display = 'none';
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  var banner = document.getElementById("Banner");
+  var closeBannerButton = document.getElementById("closeBanner");
+  if (banner && closeBannerButton) {
+      banner.style.display = "block";
+      closeBannerButton.addEventListener("click", function() {
+          banner.style.display = "none";
+      });
+  }
 });

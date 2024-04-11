@@ -46,7 +46,7 @@
     height: 100%;
 }
 
-.nav a{
+.nav li{
     height: 100%;
     display: table;
     float: left;
@@ -57,26 +57,25 @@
 .nav a:last-child{
     padding-right: 0;
 }
-.nav a li{
+.nav li a{
     display: table-cell;
     vertical-align: middle;
     height: 100%;
     color: white;
-    font-family: ;
     font-size: 22px;
 }
 
 .nav.open {
-    display: flex; /* Show navigation links when menu is open */
+    display: flex; 
     flex-direction: row;
-    align-items: center; /* Center links horizontally */
-    background-color: #101010; /* Optional: Add background color */
+    align-items: center;
+    background-color: #101010; 
     position: absolute;
     top: 100px;
     left: 0;
     width: 100%;
     height: auto;
-    z-index: 999; /* Ensure it's above other content */
+    z-index: 999; 
 }
 
 @media (min-width: 600px) {
@@ -143,17 +142,24 @@
     color: white;
 }
 
-.scoots-content button {
-    background-color: #ff7200; 
+.scoots-content a{
+    font-family: "Poppins";
+}
+
+.scoots-content-button {
+    margin: 5rem;
     color: white;
-    padding: 10px 20px;
+    text-decoration: none; 
+    background-color: #ff7200; 
+    padding: 2px 30px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer; 
     transition: background-color 0.8s ease;
-  }
-
+    text-decoration: none;
+}
+  
   .scoots-content button:hover {
     background-color: #890000; 
 }
@@ -181,13 +187,13 @@
     text-align: center;
     padding: 2rem;
     border-radius: 10px;
-    background-color: #fff; /* White background for the card */
+    background-color: #fff; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   }
   
 .weather-card {
     width: 100%;
-    max-width: 500px; /* Set a maximum width for the card */
+    max-width: 500px; 
   }
   
 .current-weather {
@@ -203,13 +209,13 @@
   
 
   .days-forecast {
-    text-align: left; /* Left align the forecast cards */
+    text-align: left; 
   }
   
 .weather-cards {
     display: flex;
-    flex-wrap: wrap; /* Wrap the forecast cards if needed */
-    justify-content: space-between; /* Space the cards evenly */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
   }
   
   .banner-container {
@@ -280,15 +286,15 @@
 /* Styles for mobile screens */
 @media (max-width: 767px) {
     .inner_footer {
-        width: 100%; /* Adjust width for full width */
-        max-width: none; /* Remove max-width for mobile screens */
-        padding: 10px; /* Add some padding */
-        text-align: center; /* Center align text */
+        width: 100%; 
+        max-width: none; 
+        padding: 10px; 
+        text-align: center; 
         height: auto;
     }
     .icons a {
-        display: inline-block; /* Ensure icons appear in a line */
-        margin: 0 5px; /* Add some space between icons */
+        display: inline-block; 
+        margin: 0 5px; 
     }
 }
 
@@ -345,7 +351,7 @@
 
 .box .icon{
     min-width: 60px;
-    height: 60ox;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
